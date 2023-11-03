@@ -25,8 +25,8 @@ export default function RootLayout({
       <body className={font.className}>
         <ToasterProvider />
         <SupabaseProvider>
-          <ModalProvider />
           <UserProvider>
+            <ModalProvider />
             <Sidebar>{children}</Sidebar>
           </UserProvider>
         </SupabaseProvider>
